@@ -26,9 +26,11 @@
   display: flex;
   flex-direction: row;
   margin-top: 9%;
-  /* margin-bottom: 1%; */
-  
-  /* margin-bottom: 0px; */
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .hhh{
   background-image: url(/all-pic/Your-images-here.jpg) ;
@@ -184,6 +186,7 @@
 .block-2 {
   display: flex;
   flex-direction: row;
+  /* flex-direction: column; */
   /* margin-left: 10%; */
   margin-top: 3%;
 }
@@ -196,13 +199,16 @@
   margin-right: 30px;
 }
 .big-picture {
+  width: none;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 .lp-boss {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   box-shadow: 0.5px 0.5px 10px rgba(221, 221, 221, 0.616);
   color: #c9a96e;
-  width: 630px;
 }
 .lp {
   font-size: 12px;
@@ -213,8 +219,7 @@
 .lp-2 {
   font-family: PT Serif;
   margin-left: 30px;
-  height: 27px;
-  size: 20px;
+
   line-height: 26.5px;
   color: #171717;
   margin-top: 6px;
@@ -238,15 +243,14 @@
   margin-right: 5px;
 }
 .lp-4 {
+  display: flex;
   font-family: PT Sans;
   color: #666666;
   margin-left: 30px;
   margin-top: 14px;
-  font-weight: 400px;
   size: 14px;
   line-height: 24px;
   font-size: 11px;
-  height: 72px;
 }
 .iiko {
   display: flex;
@@ -391,7 +395,7 @@
 }
 @media (max-width: 1115px) {
   .header-navigation{
-    margin-top: 10%;
+    margin-top: 13%;
   }
   .foto-end {
     display: flex;
@@ -413,6 +417,10 @@
   }
 }
 @media (max-width: 690px) {
+  .big-picture{
+    display: flex;
+    flex-direction: column;
+  }
   .navbar{
     display: block
   }
@@ -508,7 +516,7 @@
   padding-top: 120px;
   box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.5);
   height: 100vh;
-  width: 98.5vw;
+  width: 101vw;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
@@ -525,7 +533,7 @@
 .logo {
   display: flex;
   justify-content: flex-end;
-  /* position: absolute; */
+  position: absolute;
   top: 15px;
   right: 15px;
   font-size: 1.2rem;
@@ -597,8 +605,8 @@
     width: auto;
   }
   .block-1 {
-    margin-left: 0%;
-    margin-top: -1%;
+
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -607,7 +615,7 @@
   }
   .block-2 {
     margin-left: 0%;
-    margin-top: -1%;
+    margin-top: -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -631,6 +639,15 @@
   }
 }
 @media (max-width: 360px){
+
+  .check-3{
+    left: none;
+  }
+  .logo{
+    top: 17px;
+    font-size: 15px;
+  }
+
   .ggg{
     visibility: hidden;  
  
@@ -654,17 +671,7 @@
   align-items: flex-end;
 }
 .navbar .menu-items {
-  background-color: #000000bd;
-  padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.5);
   height: 100vh;
-  width: 98.5vw;
-  transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
-  transition: transform 0.5s ease-in-out;
-  text-align: center;
+  width: 105vw;
 }
 }
